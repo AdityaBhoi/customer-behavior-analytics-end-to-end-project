@@ -1,13 +1,14 @@
-# 📊 Customer Behavior Analytics Dashboard — Power BI Project
+# 📊 Customer Behavior Analysis — End-to-End Data Analyst Project
 
 <div align="center">
 
+![Python](https://img.shields.io/badge/Python-Analysis-blue?style=for-the-badge&logo=python)
+![SQL](https://img.shields.io/badge/SQL-Database-orange?style=for-the-badge&logo=mysql)
 ![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow?style=for-the-badge&logo=powerbi&logoColor=black)
-![Data Analytics](https://img.shields.io/badge/Data-Analytics-blue?style=for-the-badge)
-![Visualization](https://img.shields.io/badge/Data-Visualization-purple?style=for-the-badge)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?style=for-the-badge&logo=jupyter)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
 
-**An interactive Power BI dashboard designed to analyze customer purchasing behavior, sales trends, subscription insights, and revenue performance using modern data visualizations.**
+**An end-to-end data analytics project focused on customer purchasing behavior analysis using Python, SQL, Jupyter Notebook, and Power BI.**
 
 </div>
 
@@ -15,17 +16,17 @@
 
 # 📌 Project Overview
 
-This project focuses on building an interactive **Customer Behavior Analytics Dashboard** in **Power BI** to analyze:
+This project analyzes customer purchasing behavior and sales trends to identify meaningful business insights.
 
-- Customer purchasing patterns
-- Revenue performance
-- Product category sales
-- Customer subscription behavior
-- Age-group analysis
-- Shipping preferences
-- Review ratings
+The project includes:
+- Data Cleaning using Python
+- Exploratory Data Analysis (EDA)
+- SQL-based business queries
+- Interactive Power BI Dashboard
+- Customer segmentation analysis
+- Revenue & sales analysis
 
-The dashboard helps businesses understand customer trends and make data-driven decisions using powerful visual analytics.
+The main objective of this project is to help businesses understand customer behavior and make data-driven decisions.
 
 ---
 
@@ -43,41 +44,99 @@ The dashboard helps businesses understand customer trends and make data-driven d
 
 | File Name | Description |
 |---|---|
-| `Customer Behavior.csv` | Contains customer purchase, subscription, category, and sales data |
+| `Customer Behavior.csv` | Contains customer purchase and sales data |
 
 ---
 
-# 📊 Key Dashboard Metrics
+# 🛠️ Technologies Used
+
+| Tool / Technology | Purpose |
+|---|---|
+| Python | Data Cleaning & Analysis |
+| Pandas | Data Manipulation |
+| NumPy | Numerical Operations |
+| Matplotlib | Data Visualization |
+| Seaborn | Statistical Visualization |
+| SQL | Business Query Analysis |
+| Jupyter Notebook | Exploratory Data Analysis |
+| Power BI | Interactive Dashboard |
+
+---
+
+# 📊 Project Workflow
+
+## 1️⃣ Data Collection
+- Imported customer behavior dataset from Kaggle
+- Loaded dataset into Jupyter Notebook for analysis
+
+---
+
+## 2️⃣ Data Cleaning using Python
+Performed:
+- Null value handling
+- Duplicate removal
+- Data type corrections
+- Column formatting
+- Feature engineering
+
+---
+
+## 3️⃣ Exploratory Data Analysis (EDA)
+Analyzed:
+- Customer demographics
+- Purchase behavior
+- Revenue trends
+- Product category performance
+- Shipping preferences
+- Review ratings
+
+Used:
+- Bar charts
+- Count plots
+- Histograms
+- Heatmaps
+
+---
+
+## 4️⃣ SQL Analysis
+Used SQL queries for:
+- Revenue analysis
+- Top-performing categories
+- Customer segmentation
+- Review analysis
+- Shipping analysis
+
+Example SQL Query:
+
+```sql
+SELECT category,
+SUM(purchase_amount) AS total_revenue
+FROM customer
+GROUP BY category
+ORDER BY total_revenue DESC;
+```
+
+---
+
+## 5️⃣ Power BI Dashboard
+Built an interactive dashboard featuring:
+- KPI cards
+- Revenue analysis
+- Sales analysis
+- Age-group insights
+- Subscription analysis
+- Interactive slicers
+
+---
+
+# 📈 Key Dashboard Metrics
 
 | Metric | Value |
 |---|---|
-| 👥 Total Customers | **3.9K** |
-| 💰 Average Purchase Amount | **$59.76** |
-| ⭐ Average Review Rating | **3.75** |
-| 🛒 Total Revenue | **233K** |
-
----
-
-# 📈 Dashboard Features
-
-## 🟣 Customer Analysis
-- Customer subscription insights
-- Gender-wise customer segmentation
-- Customer age-group analysis
-
-## 🔵 Revenue Analysis
-- Revenue by category
-- Revenue by age group
-- Revenue performance tracking
-
-## 🟢 Sales Insights
-- Sales by category
-- Sales by age group
-- Product performance analysis
-
-## 🟠 Shipping Analysis
-- Shipping type preferences
-- Delivery method insights
+| 👥 Total Customers | 3.9K |
+| 💰 Average Purchase Amount | $59.76 |
+| ⭐ Average Review Rating | 3.75 |
+| 🛒 Total Revenue | 233K |
 
 ---
 
@@ -85,11 +144,11 @@ The dashboard helps businesses understand customer trends and make data-driven d
 
 | Visualization | Purpose |
 |---|---|
-| KPI Cards | Display overall business metrics |
-| Donut Chart | Subscription status distribution |
-| Column Charts | Revenue & sales comparison |
+| KPI Cards | Business metrics |
+| Donut Chart | Subscription distribution |
+| Column Charts | Category analysis |
 | Bar Charts | Age-group analysis |
-| Slicers | Interactive dashboard filtering |
+| Slicers | Interactive filtering |
 
 ---
 
@@ -97,37 +156,17 @@ The dashboard helps businesses understand customer trends and make data-driven d
 
 | # | Insight |
 |---|---|
-| 👕 | Clothing category generated the highest revenue |
-| 👥 | Young adults contributed the highest sales |
-| ⭐ | Average customer review rating is 3.75 |
+| 👕 | Clothing category generated highest revenue |
+| 👥 | Young adults contributed highest sales |
 | 🚚 | Standard shipping is most preferred |
-| 📊 | Non-subscribed customers dominate overall customer base |
-
----
-
-# 🛠️ Tools & Technologies Used
-
-- **Power BI**
-- **Power Query**
-- **DAX (Data Analysis Expressions)**
-- **CSV Dataset**
-- **Data Visualization Techniques**
+| ⭐ | Average customer rating is 3.75 |
+| 📊 | Non-subscribed customers dominate the customer base |
 
 ---
 
 # ⚙️ Power BI Features Implemented
 
-## ✅ Data Cleaning
-- Removed null values
-- Corrected data types
-- Formatted columns properly
-
-## ✅ Data Modeling
-- Structured dataset relationships
-- Optimized dashboard performance
-
 ## ✅ DAX Measures
-Used custom DAX calculations for:
 
 ```DAX
 Total Revenue = SUM(customer[purchase_amount])
@@ -139,24 +178,23 @@ Average Rating = AVERAGE(customer[review_rating])
 Average Purchase = AVERAGE(customer[purchase_amount])
 ```
 
-## ✅ Interactive Dashboard
-- Dynamic slicers
-- Category filtering
-- Gender-based analysis
-- Shipping analysis
-- Subscription tracking
-
 ---
 
 # 📁 Project Structure
 
 ```bash
-customer-behavior-analytics-dashboard/
+customer-behavior-analysis-end-to-end-project/
 │
 ├── Dataset/
 │   └── Customer Behavior.csv
 │
-├── Dashboard/
+├── SQL/
+│   └── customer_analysis_queries.sql
+│
+├── Jupyter Notebook/
+│   └── customer_behavior_analysis.ipynb
+│
+├── Power BI Dashboard/
 │   └── CUSTOMER BEHAVIOR ANALYTICS.pbit
 │
 ├── Images/
@@ -164,37 +202,58 @@ customer-behavior-analytics-dashboard/
 │
 ├── README.md
 │
-└── LICENSE
+└── requirements.txt
 ```
 
 ---
 
-# 🚀 How to Use
+# 🚀 How to Run This Project
 
-1. Download or clone this repository
-2. Open the `.pbit` file in Power BI Desktop
-3. Load the CSV dataset when prompted
-4. Refresh the dashboard
-5. Explore insights using slicers and filters
+## Python & Jupyter Notebook
+
+1. Install required libraries
+
+```bash
+pip install pandas numpy matplotlib seaborn jupyter
+```
+
+2. Open Jupyter Notebook
+
+```bash
+jupyter notebook
+```
+
+3. Run:
+```bash
+customer_behavior_analysis.ipynb
+```
+
+---
+
+## Power BI Dashboard
+
+1. Open `.pbit` file in Power BI Desktop
+2. Load CSV dataset
+3. Refresh dashboard
+4. Explore insights using slicers
 
 ---
 
 # 📌 Business Use Cases
 
-This dashboard helps businesses:
-
+This project helps businesses:
 - Understand customer purchasing behavior
-- Analyze category-wise revenue
-- Monitor customer subscription trends
+- Identify top-performing product categories
 - Improve shipping strategies
-- Identify high-performing customer segments
-- Enhance customer experience decisions
+- Monitor revenue performance
+- Analyze customer satisfaction
+- Make data-driven business decisions
 
 ---
 
 # 👤 Author
 
-**Aditya Bhoi**
+## Aditya Bhoi
 
 - 🔗 LinkedIn: www.linkedin.com/in/adityabhoi
 - 🐙 GitHub: github.com/AdityaBhoi
@@ -205,6 +264,6 @@ This dashboard helps businesses:
 
 ⭐ If you found this project useful, give it a star! ⭐
 
-Made with ❤️ using Power BI
+Made with ❤️ using Python, SQL & Power BI
 
 </div>
