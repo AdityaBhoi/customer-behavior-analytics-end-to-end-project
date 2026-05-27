@@ -1,14 +1,14 @@
-# 📊 Customer Behavior Analysis — End-to-End Data Analyst Project
+# 📊 Customer Behavior Analytics — End-to-End Data Analyst Project
 
 <div align="center">
 
 ![Python](https://img.shields.io/badge/Python-Analysis-blue?style=for-the-badge&logo=python)
 ![SQL](https://img.shields.io/badge/SQL-Database-orange?style=for-the-badge&logo=mysql)
 ![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow?style=for-the-badge&logo=powerbi&logoColor=black)
-![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?style=for-the-badge&logo=jupyter)
+![Data Analytics](https://img.shields.io/badge/Data-Analytics-purple?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
 
-**An end-to-end data analytics project focused on customer purchasing behavior analysis using Python, SQL, Jupyter Notebook, and Power BI.**
+**An end-to-end Data Analytics project focused on analyzing customer purchasing behavior, sales trends, customer segmentation, and business insights using Python, SQL, Jupyter Notebook, and Power BI.**
 
 </div>
 
@@ -16,17 +16,18 @@
 
 # 📌 Project Overview
 
-This project analyzes customer purchasing behavior and sales trends to identify meaningful business insights.
+This project focuses on analyzing customer purchasing behavior and sales performance to uncover valuable business insights through data analysis and interactive visualizations.
 
 The project includes:
+
 - Data Cleaning using Python
 - Exploratory Data Analysis (EDA)
-- SQL-based business queries
+- SQL Business Queries
+- Customer Segmentation Analysis
+- Revenue & Sales Trend Analysis
 - Interactive Power BI Dashboard
-- Customer segmentation analysis
-- Revenue & sales analysis
 
-The main objective of this project is to help businesses understand customer behavior and make data-driven decisions.
+The dashboard helps businesses make data-driven decisions by identifying customer trends, product performance, and purchasing patterns.
 
 ---
 
@@ -44,69 +45,109 @@ The main objective of this project is to help businesses understand customer beh
 
 | File Name | Description |
 |---|---|
-| `Customer Behavior.csv` | Contains customer purchase and sales data |
+| `Customer Behavior.csv` | Contains customer purchase, sales, and behavioral data |
 
 ---
 
-# 🛠️ Technologies Used
+# 📊 Key Dashboard Metrics
 
-| Tool / Technology | Purpose |
+| Metric | Value |
 |---|---|
-| Python | Data Cleaning & Analysis |
-| Pandas | Data Manipulation |
-| NumPy | Numerical Operations |
-| Matplotlib | Data Visualization |
-| Seaborn | Statistical Visualization |
-| SQL | Business Query Analysis |
-| Jupyter Notebook | Exploratory Data Analysis |
-| Power BI | Interactive Dashboard |
+| 👥 Total Customers | **3.9K** |
+| 💰 Average Purchase Amount | **$59.76** |
+| ⭐ Average Review Rating | **3.75** |
+| 🛒 Total Revenue | **233K** |
 
 ---
 
-# 📊 Project Workflow
+# 📈 Dashboard Features
 
-## 1️⃣ Data Collection
-- Imported customer behavior dataset from Kaggle
-- Loaded dataset into Jupyter Notebook for analysis
+## 🟣 Customer Analysis
+- Customer segmentation insights
+- Age-group purchasing behavior
+- Subscription analysis
+- Customer review analysis
 
----
-
-## 2️⃣ Data Cleaning using Python
-Performed:
-- Null value handling
-- Duplicate removal
-- Data type corrections
-- Column formatting
-- Feature engineering
-
----
-
-## 3️⃣ Exploratory Data Analysis (EDA)
-Analyzed:
-- Customer demographics
-- Purchase behavior
-- Revenue trends
+## 🟢 Revenue & Sales Analysis
+- Total revenue tracking
 - Product category performance
-- Shipping preferences
-- Review ratings
+- Purchase amount trends
+- Revenue contribution analysis
 
-Used:
-- Bar charts
-- Count plots
-- Histograms
-- Heatmaps
+## 🔵 Product & Shipping Insights
+- Best-performing product categories
+- Shipping preference analysis
+- Product demand analysis
+- Customer buying trends
+
+## 🟠 Interactive Dashboard
+- Dynamic filtering
+- Interactive slicers
+- KPI monitoring
+- Drill-down analysis
 
 ---
 
-## 4️⃣ SQL Analysis
+# 📊 Visualizations Used
+
+| Visualization | Purpose |
+|---|---|
+| KPI Cards | Display business metrics |
+| Donut Charts | Subscription distribution |
+| Bar Charts | Customer & category analysis |
+| Column Charts | Revenue comparison |
+| Slicers | Interactive dashboard filtering |
+
+---
+
+# 🔍 Key Insights
+
+| # | Insight |
+|---|---|
+| 👕 | Clothing category generated the highest revenue |
+| 👥 | Young adults contributed the highest sales |
+| 🚚 | Standard shipping is the most preferred shipping method |
+| ⭐ | Average customer review rating is 3.75 |
+| 📊 | Non-subscribed customers dominate the customer base |
+
+---
+
+# 🛠️ Tools & Technologies Used
+
+- **Python**
+- **Pandas**
+- **NumPy**
+- **Matplotlib**
+- **Seaborn**
+- **SQL**
+- **Jupyter Notebook**
+- **Power BI**
+- **DAX (Data Analysis Expressions)**
+
+---
+
+# ⚙️ Power BI Features Implemented
+
+## ✅ Data Cleaning
+- Handled missing values
+- Removed duplicate records
+- Corrected data types
+- Performed feature engineering
+
+## ✅ Exploratory Data Analysis
+- Revenue trend analysis
+- Customer behavior analysis
+- Product category analysis
+- Shipping preference analysis
+
+## ✅ SQL Analysis
 Used SQL queries for:
 - Revenue analysis
-- Top-performing categories
 - Customer segmentation
+- Product performance analysis
 - Review analysis
-- Shipping analysis
 
-Example SQL Query:
+### Example SQL Query
 
 ```sql
 SELECT category,
@@ -115,56 +156,6 @@ FROM customer
 GROUP BY category
 ORDER BY total_revenue DESC;
 ```
-
----
-
-## 5️⃣ Power BI Dashboard
-Built an interactive dashboard featuring:
-- KPI cards
-- Revenue analysis
-- Sales analysis
-- Age-group insights
-- Subscription analysis
-- Interactive slicers
-
----
-
-# 📈 Key Dashboard Metrics
-
-| Metric | Value |
-|---|---|
-| 👥 Total Customers | 3.9K |
-| 💰 Average Purchase Amount | $59.76 |
-| ⭐ Average Review Rating | 3.75 |
-| 🛒 Total Revenue | 233K |
-
----
-
-# 📊 Visualizations Used
-
-| Visualization | Purpose |
-|---|---|
-| KPI Cards | Business metrics |
-| Donut Chart | Subscription distribution |
-| Column Charts | Category analysis |
-| Bar Charts | Age-group analysis |
-| Slicers | Interactive filtering |
-
----
-
-# 🔍 Key Insights
-
-| # | Insight |
-|---|---|
-| 👕 | Clothing category generated highest revenue |
-| 👥 | Young adults contributed highest sales |
-| 🚚 | Standard shipping is most preferred |
-| ⭐ | Average customer rating is 3.75 |
-| 📊 | Non-subscribed customers dominate the customer base |
-
----
-
-# ⚙️ Power BI Features Implemented
 
 ## ✅ DAX Measures
 
@@ -178,12 +169,18 @@ Average Rating = AVERAGE(customer[review_rating])
 Average Purchase = AVERAGE(customer[purchase_amount])
 ```
 
+## ✅ Interactive Dashboard
+- Dynamic KPI cards
+- Drill-down analysis
+- Interactive filtering
+- User-friendly dashboard design
+
 ---
 
 # 📁 Project Structure
 
 ```bash
-customer-behavior-analysis-end-to-end-project/
+customer-behavior-analytics-end-to-end-project/
 │
 ├── Dataset/
 │   └── Customer Behavior.csv
@@ -207,7 +204,7 @@ customer-behavior-analysis-end-to-end-project/
 
 ---
 
-# 🚀 How to Run This Project
+# 🚀 How to Use
 
 ## Python & Jupyter Notebook
 
@@ -224,6 +221,7 @@ jupyter notebook
 ```
 
 3. Run:
+
 ```bash
 customer_behavior_analysis.ipynb
 ```
@@ -232,16 +230,17 @@ customer_behavior_analysis.ipynb
 
 ## Power BI Dashboard
 
-1. Open `.pbit` file in Power BI Desktop
-2. Load CSV dataset
-3. Refresh dashboard
-4. Explore insights using slicers
+1. Open the `.pbit` file in Power BI Desktop
+2. Load the CSV dataset
+3. Refresh the dashboard
+4. Explore insights using slicers and filters
 
 ---
 
 # 📌 Business Use Cases
 
 This project helps businesses:
+
 - Understand customer purchasing behavior
 - Identify top-performing product categories
 - Improve shipping strategies
@@ -251,12 +250,12 @@ This project helps businesses:
 
 ---
 
-# 👤 Author
+## 👤 Author
 
-## Aditya Bhoi
+**Aditya Bhoi**
 
-- 🔗 LinkedIn: www.linkedin.com/in/adityabhoi
-- 🐙 GitHub: github.com/AdityaBhoi
+- 🔗 [LinkedIn](https://www.linkedin.com/in/adityabhoi/)
+- 🐙 [GitHub](https://github.com/AdityaBhoi/)
 
 ---
 
